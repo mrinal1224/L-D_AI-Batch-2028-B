@@ -1,0 +1,16 @@
+{
+  "name": "studyassist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01_SDK_Gemini.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^3.6.0",
+    "dotenv": "^18.0.10"
+  }
+}
