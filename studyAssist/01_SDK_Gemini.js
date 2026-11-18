@@ -23,7 +23,7 @@ console.log("STEP 2: Gemini client initialized");
 
 // STEP 3 — Read model from the environment so it can be changed
 // without editing every example. Choose a model available to your key.
-export const model = process.env.GEMINI_MODEL || "gemini-3.8-flash";
+export const model =  "gemini-3.5-flash-lite";
 console.log("STEP 3: Selected model:", model);
 
 // ASK STUDENTS: Why should we never log an API key?
