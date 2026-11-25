@@ -44,15 +44,25 @@ app.post("/chat", async (req, res) => {
 
   try {
     // STEP 3 — Call Gemini through LangChain.
-    const result = await llm.invoke(prompt);
+    const result = await agent.invoke({
+      messages : [
+        {
+          role : 'user',
+          content: prompt
+        }
+      ]
+
+    });
 
     // STEP 4 — Extract generated text.
-    const response = result.text;
+    const response = result.messages.at(-1).content
 
     // STEP 5 — Return the same JSON contract.
     return res.json({
-      response,
+      response
     });
+
+  
   } catch (error) {
     console.error("LangChain call failed:", error);
 
