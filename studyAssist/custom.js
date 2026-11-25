@@ -163,7 +163,7 @@ const products = [
 
  function searchProduct(productName) {
   const product = products.find(
-    (p) => p.name.toLowerCase() === productName.trim().toLowerCase()
+    (p) => p.title.toLowerCase() === productName.trim().toLowerCase()
   );
 
   return product || { error: "Product not found" };
@@ -197,7 +197,22 @@ const productTool = tool(
 
 const agent = createAgent({
     model : llm,
-    tools : [productTool]
+    tools : [productTool],
+
+    systemPrompt : `
+    You are a helpful shopping assistant.
+
+    Use the product search tool whenever the user
+    asks about product prices or availability.
+
+    Never invent product information.
+
+    Answer general questions directly.
+
+    Return a clear, natural-language response.
+  `
+
+
 });
 
 
