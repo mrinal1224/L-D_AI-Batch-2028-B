@@ -1,12 +1,9 @@
-# AI Engineering — Student Notes
+# AI Engineering — Weekly Assignments
 
-These notes follow the JavaScript-first classroom demonstrations in this repository. Read them in order, run the corresponding examples, and then attempt the assignments independently.
+This directory organizes assignments by teaching week. Each week contains an index, problem statements, guided implementation steps, acceptance tests and submission guidelines.
 
-| Week | Class | Notes |
+| Week | Topics | Assignments |
 | --- | --- | --- |
-| 1 | 1 | [LLMs, Gemini SDK, Express and LangChain](week-1/01-llm-fundamentals.md) |
-| 1 | 2 | [AI agents, Tavily and custom tools](week-1/02-agents-and-tools.md) |
+| [Week 1](week-1/README.md) | Gemini SDK, LangChain, Tavily, custom tools and AI agents | 6 |
 
-[Week 1 assignments](../assignments/week-1/README.md)
-
-Examples illustrate expected behaviour, not guaranteed model wording. No assignment solutions are included.
+Future weeks will be added as the course progresses. Start with the relevant week's README. Implementation guides explain concepts and milestones without providing complete solutions.
