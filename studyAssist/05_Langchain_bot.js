@@ -21,16 +21,6 @@ const agent = createAgent({
 
 
 
-
-
-
-
-
-
-
-
-
-
 // STEP 1 — Create the same endpoint.
 app.post("/chat", async (req, res) => {
   const { prompt } = req.body ?? {};
